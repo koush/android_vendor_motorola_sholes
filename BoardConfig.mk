@@ -3,12 +3,11 @@
 #
 
 TARGET_BOARD_PLATFORM := omap3
-TARGET_CPU_ABI := armeabi
-#TARGET_CPU_ABI2 := armeabi
-#TARGET_ARCH_VARIANT := armv7-a
-#ARCH_ARM_HAVE_TLS_REGISTER := true
-#TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
-#TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_ARCH_VARIANT := armv7-a
+TARGET_GLOBAL_CFLAGS += -mtune=cortex-a8 -ftree-vectorize
+TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a8 -ftree-vectorize
 
 TARGET_NO_BOOTLOADER := false
 
