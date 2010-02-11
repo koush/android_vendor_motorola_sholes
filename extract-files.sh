@@ -90,8 +90,6 @@ adb pull /system/lib/libpvr2d.so proprietary/libpvr2d.so
 adb pull /system/lib/libpvrANDROID_WSEGL.so proprietary/libpvrANDROID_WSEGL.so
 adb pull /system/lib/libspeech.so proprietary/libspeech.so
 adb pull /system/lib/libsrv_um.so proprietary/libsrv_um.so
-adb pull /system/lib/modules/tiwlan_drv.ko proprietary/tiwlan_drv.ko
-adb pull /system/lib/modules/wl127x_test.ko proprietary/wl127x_test.ko
 adb pull /system/tts/lang_pico/de-DE_gl0_sg.bin proprietary/de-DE_gl0_sg.bin
 adb pull /system/tts/lang_pico/de-DE_ta.bin proprietary/de-DE_ta.bin
 adb pull /system/tts/lang_pico/en-GB_kh0_sg.bin proprietary/en-GB_kh0_sg.bin

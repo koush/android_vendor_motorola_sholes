@@ -154,7 +154,7 @@ $(LOCAL_PATH)/proprietary/it-IT_ta.bin:system/tts/lang_pico/it-IT_ta.bin \
 $(LOCAL_PATH)/proprietary/sholes-keypad.kcm.bin:system/usr/keychars/sholes-keypad.kcm.bin \
 $(LOCAL_PATH)/proprietary/cpcap-key.kl:system/usr/keylayout/cpcap-key.kl \
 $(LOCAL_PATH)/proprietary/sholes-keypad.kl:system/usr/keylayout/sholes-keypad.kl \
-$(LOCAL_PATH)/proprietary/wl127x_test.ko:system/lib/modules/wl127x_test.ko \
+$(LOCAL_PATH)/wl127x_test.ko:system/lib/modules/wl127x_test.ko \
 $(LOCAL_PATH)/proprietary/tiwlan_drv.ko:system/lib/modules/tiwlan_drv.ko
 
 # $(LOCAL_PATH)/proprietary/wlan_cu:system/bin/wlan_cu  
