@@ -9,11 +9,6 @@ adb pull /system/lib/libcamera.so proprietary/libcamera.so
 adb pull /system/lib/libril_rds.so proprietary/libril_rds.so
 adb pull /system/lib/libnmea.so proprietary/libnmea.so
 
-#adb pull /system/bin/wlan_cu proprietary/wlan_cu
-#adb pull /system/bin/wlan_loader proprietary/wlan_loader
-#adb pull /system/bin/wpa_supplicant proprietary/wpa_supplicant
-#adb pull /system/lib/libwpa_client.so proprietary/libwpa_client.so
-
 adb pull /system/bin/SaveBPVer proprietary/SaveBPVer
 adb pull /system/bin/akmd2 proprietary/akmd2
 adb pull /system/bin/ap_gain.bin proprietary/ap_gain.bin

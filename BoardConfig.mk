@@ -11,6 +11,8 @@ TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a8
 
 TARGET_NO_BOOTLOADER := false
 
+HARDWARE_OMX := true
+
 # Wifi related defines
 BOARD_WPA_SUPPLICANT_DRIVER := CUSTOM
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := libCustomWifi

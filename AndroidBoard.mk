@@ -75,7 +75,6 @@ $(LOCAL_PATH)/proprietary/picd:system/bin/picd \
 $(LOCAL_PATH)/proprietary/pppd-ril:system/bin/pppd-ril \
 $(LOCAL_PATH)/proprietary/pvrsrvinit:system/bin/pvrsrvinit \
 $(LOCAL_PATH)/proprietary/tcmd:system/bin/tcmd \
-$(LOCAL_PATH)/proprietary/01_Vendor_ti_omx.cfg:system/etc/01_Vendor_ti_omx.cfg \
 $(LOCAL_PATH)/proprietary/cameraCalFileDef.bin:system/etc/cameraCalFileDef.bin \
 $(LOCAL_PATH)/proprietary/excluded-input-devices.xml:system/etc/excluded-input-devices.xml \
 $(LOCAL_PATH)/proprietary/wl1271.bin:system/etc/firmware/wl1271.bin \
@@ -113,17 +112,6 @@ $(LOCAL_PATH)/proprietary/lights.sholes.so:system/lib/hw/lights.sholes.so \
 $(LOCAL_PATH)/proprietary/sensors.sholes.so:system/lib/hw/sensors.sholes.so \
 $(LOCAL_PATH)/proprietary/libHPImgApi.so:system/lib/libHPImgApi.so \
 $(LOCAL_PATH)/proprietary/libIMGegl.so:system/lib/libIMGegl.so \
-$(LOCAL_PATH)/proprietary/libLCML.so:system/lib/libLCML.so \
-$(LOCAL_PATH)/proprietary/libOMX.TI.AAC.encode.so:system/lib/libOMX.TI.AAC.encode.so \
-$(LOCAL_PATH)/proprietary/libOMX.TI.AMR.encode.so:system/lib/libOMX.TI.AMR.encode.so \
-$(LOCAL_PATH)/proprietary/libOMX.TI.JPEG.Encoder.so:system/lib/libOMX.TI.JPEG.Encoder.so \
-$(LOCAL_PATH)/proprietary/libOMX.TI.Video.Decoder.so:system/lib/libOMX.TI.Video.Decoder.so \
-$(LOCAL_PATH)/proprietary/libOMX.TI.Video.encoder.so:system/lib/libOMX.TI.Video.encoder.so \
-$(LOCAL_PATH)/proprietary/libOMX.TI.WBAMR.encode.so:system/lib/libOMX.TI.WBAMR.encode.so \
-$(LOCAL_PATH)/proprietary/libOMX_Core.so:system/lib/libOMX_Core.so \
-$(LOCAL_PATH)/proprietary/libPERF.so:system/lib/libPERF.so \
-$(LOCAL_PATH)/proprietary/libVendor_ti_omx.so:system/lib/libVendor_ti_omx.so \
-$(LOCAL_PATH)/proprietary/libVendor_ti_omx_config_parser.so:system/lib/libVendor_ti_omx_config_parser.so \
 $(LOCAL_PATH)/proprietary/libbattd.so:system/lib/libbattd.so \
 $(LOCAL_PATH)/proprietary/libglslcompiler.so:system/lib/libglslcompiler.so \
 $(LOCAL_PATH)/proprietary/libgtalk_jni.so:system/lib/libgtalk_jni.so \
@@ -156,8 +144,3 @@ $(LOCAL_PATH)/proprietary/cpcap-key.kl:system/usr/keylayout/cpcap-key.kl \
 $(LOCAL_PATH)/proprietary/sholes-keypad.kl:system/usr/keylayout/sholes-keypad.kl \
 $(LOCAL_PATH)/wl127x_test.ko:system/lib/modules/wl127x_test.ko \
 $(LOCAL_PATH)/tiwlan_drv.ko:system/lib/modules/tiwlan_drv.ko
-
-# $(LOCAL_PATH)/proprietary/wlan_cu:system/bin/wlan_cu  
-# $(LOCAL_PATH)/proprietary/wlan_loader:system/bin/wlan_loader  
-# $(LOCAL_PATH)/proprietary/wpa_supplicant:system/bin/wpa_supplicant  
-# $(LOCAL_PATH)/proprietary/libwpa_client.so:system/lib/libwpa_client.so 
