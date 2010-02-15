@@ -11,6 +11,9 @@ ro.sf.lcd_density=240
 ro.telephony.default_network=4
 
 wifi.interface = tiwlan0
+# Time between scans in seconds. Keep it high to minimize battery drain.
+# This only affects the case in which there are remembered access points,
+# but none are in range.
 wifi.supplicant_scan_interval = 15
 
 # Indicate carrier OTA SP number schema
@@ -24,11 +27,3 @@ ro.opengles.version = 131072
 
 # This is a high density device with more memory, so larger vm heaps for it.
 dalvik.vm.heapsize=24m
-
-
-ro.cdma.home.operator.numeric=310004
-ro.cdma.home.operator.alpha=Verizon
-ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83
-ro.cdma.data_retry_config=default_randomization=2000,0,0,120000,180000,540000,960000
-ro.config.vc_call_vol_steps=7
-ro.cdma.otaspnumschema=SELC,1,80,99
