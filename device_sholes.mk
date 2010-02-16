@@ -18,7 +18,7 @@
 
 DEVICE_PACKAGE_OVERLAYS := vendor/motorola/sholes-open/overlay
 
-ADDITIONAL_BUILD_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
 		ro.config.notification_sound=droid.ogg \
 		ro.config.ringtone=DroidInvasion.ogg \
 		ro.config.notification_sound=OnTheHunt.ogg \
