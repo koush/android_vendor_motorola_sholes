@@ -1,5 +1,5 @@
 #
-# system.prop for mahimahi
+# system.prop for generic sdk
 #
 
 rild.libpath=/system/lib/libmoto_ril.so

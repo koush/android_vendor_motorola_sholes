@@ -11,7 +11,7 @@ TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a8
 
 TARGET_NO_BOOTLOADER := false
 
-HARDWARE_OMX := true
+#HARDWARE_OMX := true
 
 # Wifi related defines
 BOARD_WPA_SUPPLICANT_DRIVER := CUSTOM
@@ -28,20 +28,12 @@ TARGET_BOOTLOADER_BOARD_NAME := sholes
 BOARD_KERNEL_CMDLINE := console=ttyS2,115200n8 rw mem=244M@0x80C00000 init=/init ip=off brdrev=P3A_CDMA mtdparts=omap2-nand.0:640k@128k(mbm),384k@1408k(cdt),384k@3328k(lbl),384k@6272k(misc),3584k(boot),4608k(recovery),143744k(system),94848k(cache),268032k(userdata),2m(kpanic)
 
 BOARD_HAVE_BLUETOOTH := true
-# BOARD_HAVE_BLUETOOTH_BCM := true
 
 TARGET_HARDWARE_3D := false
 
 BOARD_GPS_LIBRARIES := libmoto_gps
 
-# BOARD_VENDOR_USE_AKMD := true
-
 USE_PV_WINDOWS_MEDIA := false
-
-# BOARD_USE_HTC_APPS := true
-
-# BOARD_USE_HTC_LIBSENSORS := true
-# BOARD_HTC_LIBSENSORS_NAME := sensors.mahimahi
 
 BOARD_BOOTIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x00280000)
 BOARD_RECOVERYIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x00500000)
