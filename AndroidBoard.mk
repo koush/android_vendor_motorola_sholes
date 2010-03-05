@@ -63,8 +63,7 @@ OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
 include $(BUILD_PREBUILT)
 
 PRODUCT_COPY_FILES += \
-$(LOCAL_PATH)/wl127x_test.ko:system/lib/modules/wl127x_test.ko \
-$(LOCAL_PATH)/tiwlan_drv.ko:system/lib/modules/tiwlan_drv.ko
+$(LOCAL_PATH)/tiwlan_drv.ko:system/lib/modules/tiwlan_drv.ko 
 
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/proprietary/SaveBPVer:system/bin/SaveBPVer \
