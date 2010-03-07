@@ -9,6 +9,7 @@ adb pull /system/lib/libcamera.so proprietary
 adb pull /system/lib/libril_rds.so proprietary
 adb pull /system/lib/libnmea.so proprietary
 
+adb pull /system/media/audio/notifications/droid.ogg proprietary
 adb pull /system/bin/SaveBPVer proprietary
 adb pull /system/bin/akmd2 proprietary
 adb pull /system/bin/ap_gain.bin proprietary

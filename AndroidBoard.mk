@@ -66,6 +66,7 @@ PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/tiwlan_drv.ko:system/lib/modules/tiwlan_drv.ko 
 
 PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/proprietary/droid.ogg:system/media/audio/notifications/droid.ogg \
 $(LOCAL_PATH)/proprietary/SaveBPVer:system/bin/SaveBPVer \
 $(LOCAL_PATH)/proprietary/akmd2:system/bin/akmd2 \
 $(LOCAL_PATH)/proprietary/ap_gain.bin:system/bin/ap_gain.bin \
