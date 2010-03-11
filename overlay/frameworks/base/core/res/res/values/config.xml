@@ -82,7 +82,7 @@
 
     <!-- The number of degrees to rotate the display when the device is in a desk dock.
          A value of -1 means no change in orientation by default. -->
-    <integer name="config_deskDockRotation">-1</integer>
+    <integer name="config_deskDockRotation">90</integer>
 
     <!-- The number of degrees to rotate the display when the device is in a car dock.
          A value of -1 means no change in orientation by default. -->
@@ -104,7 +104,7 @@
     <bool name="config_deskDockEnablesAccelerometer">false</bool>
 
     <!-- Control whether being in the car dock should enable accelerometer based screen orientation -->
-    <bool name="config_carDockEnablesAccelerometer">false</bool>
+    <bool name="config_carDockEnablesAccelerometer">true</bool>
 
     <!-- Indicate whether the lid state impacts the accessibility of
          the physical keyboard.  0 means it doesn't, 1 means it is accessible
