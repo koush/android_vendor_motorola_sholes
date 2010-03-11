@@ -73,7 +73,7 @@
     
     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
-    <bool name="config_automatic_brightness_available">false</bool>
+    <bool name="config_automatic_brightness_available">true</bool>
     
     <!-- XXXXXX END OF RESOURCES USING WRONG NAMING CONVENTION -->
 
@@ -212,17 +212,17 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessKeyboardBacklightValues">
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
+        <item>30</item>
+        <item>70</item>
+        <item>120</item>
+        <item>220</item>
+        <item>255</item>
     </integer-array>
 
     <!-- Amount of time it takes for the light sensor to warm up in milliseconds.
          For this time after the screen turns on, the Power Manager
          will not debounce light sensor readings -->
-    <integer name="config_lightSensorWarmupTime">0</integer>
+    <integer name="config_lightSensorWarmupTime">5000</integer>
 
     <!-- Enables swipe versus poly-finger touch disambiguation in the KeyboardView -->
     <bool name="config_swipeDisambiguation">true</bool>
