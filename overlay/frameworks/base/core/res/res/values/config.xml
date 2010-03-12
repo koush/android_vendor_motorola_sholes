@@ -212,10 +212,10 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessKeyboardBacklightValues">
-        <item>30</item>
-        <item>70</item>
-        <item>120</item>
-        <item>220</item>
+        <item>100</item>
+        <item>125</item>
+        <item>170</item>
+        <item>210</item>
         <item>255</item>
     </integer-array>
 
