@@ -73,6 +73,11 @@ OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
 include $(BUILD_PREBUILT)
 
 PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/proprietary/ProgramMenu.apk:/system/app/ProgramMenu.apk proprietary \
+$(LOCAL_PATH)/proprietary/ProgramMenuSystem.apk:/system/app/ProgramMenuSystem.apk proprietary \
+$(LOCAL_PATH)/proprietary/PhoneConfig.apk:/system/app/PhoneConfig.apk proprietary
+
+PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/tiwlan_drv.ko:system/lib/modules/tiwlan_drv.ko 
 
 PRODUCT_COPY_FILES += \
