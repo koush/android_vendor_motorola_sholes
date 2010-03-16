@@ -232,7 +232,7 @@
          and should not be enabled for any others.  Hopefully in the future
          it will be removed when the lower-level touch driver generates better
          data. -->
-    <bool name="config_filterTouchEvents">false</bool>
+    <bool name="config_filterTouchEvents">true</bool>
     
     <!-- Component name of the default wallpaper. This will be ImageWallpaper if not 
          specified -->
