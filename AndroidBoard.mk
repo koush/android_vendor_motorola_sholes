@@ -9,16 +9,6 @@ ALL_PREBUILT += $(file)
 $(file): $(TARGET_PREBUILT_KERNEL) | $(ACP)
 	$(transform-prebuilt-to-target)
 
-INSTALLED_RECOVERY_KERNEL_TARGET := $(PRODUCT_OUT)/recovery_kernel
-ifeq ($(TARGET_PREBUILT_RECOVERY_KERNEL),)
-TARGET_PREBUILT_RECOVERY_KERNEL := $(LOCAL_PATH)/recovery_kernel
-endif
-
-file := $(INSTALLED_RECOVERY_KERNEL_TARGET)
-ALL_PREBUILT += $(file)
-$(file): $(TARGET_PREBUILT_RECOVERY_KERNEL) | $(ACP)
-	$(transform-prebuilt-to-target)
-
 file := $(TARGET_ROOT_OUT)/init.sholes.rc
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/init.sholes.rc | $(ACP)
@@ -72,10 +62,20 @@ LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
 OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
 include $(BUILD_PREBUILT)
 
+file := $(TARGET_RECOVERY_ROOT_OUT)/etc/fstab
+ALL_PREBUILT += $(file)
+$(file) : $(LOCAL_PATH)/fstab | $(ACP)
+	$(transform-prebuilt-to-target)
+	
+file := $(TARGET_RECOVERY_ROOT_OUT)/system/etc/fstab
+ALL_PREBUILT += $(file)
+$(file) : $(LOCAL_PATH)/fstab | $(ACP)
+	$(transform-prebuilt-to-target)
+
 PRODUCT_COPY_FILES += \
-$(LOCAL_PATH)/proprietary/ProgramMenu.apk:/system/app/ProgramMenu.apk proprietary \
-$(LOCAL_PATH)/proprietary/ProgramMenuSystem.apk:/system/app/ProgramMenuSystem.apk proprietary \
-$(LOCAL_PATH)/proprietary/PhoneConfig.apk:/system/app/PhoneConfig.apk proprietary
+$(LOCAL_PATH)/proprietary/ProgramMenu.apk:/system/app/ProgramMenu.apk \
+$(LOCAL_PATH)/proprietary/ProgramMenuSystem.apk:/system/app/ProgramMenuSystem.apk \
+$(LOCAL_PATH)/proprietary/PhoneConfig.apk:/system/app/PhoneConfig.apk
 
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/tiwlan_drv.ko:system/lib/modules/tiwlan_drv.ko 
