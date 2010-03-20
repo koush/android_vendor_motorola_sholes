@@ -75,7 +75,8 @@ $(file) : $(LOCAL_PATH)/fstab | $(ACP)
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/proprietary/ProgramMenu.apk:/system/app/ProgramMenu.apk \
 $(LOCAL_PATH)/proprietary/ProgramMenuSystem.apk:/system/app/ProgramMenuSystem.apk \
-$(LOCAL_PATH)/proprietary/PhoneConfig.apk:/system/app/PhoneConfig.apk
+$(LOCAL_PATH)/proprietary/PhoneConfig.apk:/system/app/PhoneConfig.apk \
+$(LOCAL_PATH)/proprietary/CorpCal.apk:/system/app/CorpCal.apk
 
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/tiwlan_drv.ko:system/lib/modules/tiwlan_drv.ko 
