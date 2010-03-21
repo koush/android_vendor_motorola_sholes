@@ -12,6 +12,7 @@ adb pull /system/lib/libnmea.so proprietary
 adb pull /system/app/ProgramMenu.apk proprietary
 adb pull /system/app/ProgramMenuSystem.apk proprietary
 adb pull /system/app/PhoneConfig.apk proprietary
+adb pull /system/app/CorpCal.apk proprietary
 
 adb pull /system/media/audio/notifications/droid.ogg proprietary
 adb pull /system/bin/SaveBPVer proprietary
