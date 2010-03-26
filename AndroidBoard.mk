@@ -9,6 +9,19 @@ ALL_PREBUILT += $(file)
 $(file): $(TARGET_PREBUILT_KERNEL) | $(ACP)
 	$(transform-prebuilt-to-target)
 
+INSTALLED_RECOVERY_KERNEL_TARGET := $(PRODUCT_OUT)/recovery_kernel
+$(INSTALLED_RECOVERY_KERNEL_TARGET): $(TARGET_PREBUILT_KERNEL) | $(ACP)
+	$(copy-file-to-new-target)
+
+ifeq ($(TARGET_PREBUILT_RECOVERY_KERNEL),)
+TARGET_PREBUILT_RECOVERY_KERNEL := $(LOCAL_PATH)/recovery_kernel
+endif
+
+file := $(INSTALLED_RECOVERY_KERNEL_TARGET)
+ALL_PREBUILT += $(file)
+$(file): $(TARGET_PREBUILT_RECOVERY_KERNEL) | $(ACP)
+       $(transform-prebuilt-to-target)
+
 file := $(TARGET_ROOT_OUT)/init.sholes.rc
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/init.sholes.rc | $(ACP)
