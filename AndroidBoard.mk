@@ -11,7 +11,7 @@ $(file): $(TARGET_PREBUILT_KERNEL) | $(ACP)
 
 INSTALLED_RECOVERY_KERNEL_TARGET := $(PRODUCT_OUT)/recovery_kernel
 $(INSTALLED_RECOVERY_KERNEL_TARGET): $(TARGET_PREBUILT_RECOVERY_KERNEL) | $(ACP)
-        $(copy-file-to-new-target)
+	$(copy-file-to-new-target)
 
 ifeq ($(TARGET_PREBUILT_RECOVERY_KERNEL),)
 TARGET_PREBUILT_RECOVERY_KERNEL := $(LOCAL_PATH)/recovery_kernel
