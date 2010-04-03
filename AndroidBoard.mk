@@ -85,6 +85,14 @@ ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/fstab | $(ACP)
 	$(transform-prebuilt-to-target)
 
+file := $(TARGET_OUT)/usr/keychars/qtouch-touchscreen.kcm.bin
+ALL_PREBUILT += $(file)
+$(file) : $(LOCAL_PATH)/proprietary/qwerty.kcm.bin
+	@echo "Symlink: $@ -> qwerty.kcm.bin"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf qwerty.kcm.bin $@
+
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/proprietary/ProgramMenu.apk:/system/app/ProgramMenu.apk \
 $(LOCAL_PATH)/proprietary/ProgramMenuSystem.apk:/system/app/ProgramMenuSystem.apk \
