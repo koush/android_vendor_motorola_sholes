@@ -83,7 +83,7 @@ $(file) : $(LOCAL_PATH)/fstab | $(ACP)
 
 file := $(TARGET_OUT)/usr/keychars/qtouch-touchscreen.kcm.bin
 ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/proprietary/qwerty.kcm.bin
+$(file) : $(TARGET_OUT)/usr/keychars/qwerty.kcm.bin
 	@echo "Symlink: $@ -> qwerty.kcm.bin"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
