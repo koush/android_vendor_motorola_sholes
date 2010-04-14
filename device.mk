@@ -1,4 +1,4 @@
-# Build configuration for AOSP on Nexus One
+# Build configuration for AOSP on A855 (Droid)
 $(call inherit-product, build/target/product/generic.mk)
 $(call inherit-product, vendor/motorola/sholes-open/device_sholes.mk)
 
@@ -25,7 +25,7 @@ PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := sholes-open
 
 # The user-visible product name
-PRODUCT_MODEL := Droid
+PRODUCT_MODEL := A855 (Droid)
 PRODUCT_MANUFACTURER := Motorola
 
 # Pick up some sounds
