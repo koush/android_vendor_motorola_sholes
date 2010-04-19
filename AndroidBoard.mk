@@ -73,12 +73,12 @@ include $(BUILD_PREBUILT)
 
 file := $(TARGET_RECOVERY_ROOT_OUT)/etc/fstab
 ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/fstab | $(ACP)
+$(file) : $(LOCAL_PATH)/recovery_fstab | $(ACP)
 	$(transform-prebuilt-to-target)
 	
-file := $(TARGET_RECOVERY_ROOT_OUT)/system/etc/fstab
+file := $(TARGET_OUT)/etc/fstab
 ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/fstab | $(ACP)
+$(file) : $(LOCAL_PATH)/boot_fstab | $(ACP)
 	$(transform-prebuilt-to-target)
 
 file := $(TARGET_OUT)/usr/keychars/qtouch-touchscreen.kcm.bin
