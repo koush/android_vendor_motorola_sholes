@@ -60,7 +60,7 @@
     <integer name="OtaShowActivationScreen">1</integer>
     <!-- Determine whether we should show the "listen for instructions" screen after
          successfully placing the OTA call -->
-    <integer name="OtaShowListeningScreen">0</integer>
+    <integer name="OtaShowListeningScreen">1</integer>
     <!-- The number of times we should show the activation screen/allow the provisioning
          to fail before just showing an unsuccessful dialog -->
     <integer name="OtaShowActivateFailTimes">0</integer>
