@@ -71,11 +71,6 @@ LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
 OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
 include $(BUILD_PREBUILT)
 
-file := $(TARGET_RECOVERY_ROOT_OUT)/etc/fstab
-ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/recovery_fstab | $(ACP)
-	$(transform-prebuilt-to-target)
-	
 file := $(TARGET_OUT)/etc/fstab
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/boot_fstab | $(ACP)
@@ -182,17 +177,4 @@ $(LOCAL_PATH)/proprietary/sholes-keypad.kl:system/usr/keylayout/sholes-keypad.kl
 $(LOCAL_PATH)/proprietary/01_Vendor_ti_omx.cfg:system/etc/01_Vendor_ti_omx.cfg \
 $(LOCAL_PATH)/proprietary/contributors.css:system/etc/contributors.css \
 $(LOCAL_PATH)/proprietary/contributors.html:system/etc/contributors.html \
-$(LOCAL_PATH)/proprietary/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml \
-$(LOCAL_PATH)/proprietary/libLCML.so:system/lib/libLCML.so \
-$(LOCAL_PATH)/proprietary/libOMX.TI.AAC.encode.so:system/lib/libOMX.TI.AAC.encode.so \
-$(LOCAL_PATH)/proprietary/libOMX.TI.AMR.encode.so:system/lib/libOMX.TI.AMR.encode.so \
-$(LOCAL_PATH)/proprietary/libOMX.TI.JPEG.Encoder.so:system/lib/libOMX.TI.JPEG.Encoder.so \
-$(LOCAL_PATH)/proprietary/libOMX.TI.Video.Decoder.so:system/lib/libOMX.TI.Video.Decoder.so \
-$(LOCAL_PATH)/proprietary/libOMX.TI.Video.encoder.so:system/lib/libOMX.TI.Video.encoder.so \
-$(LOCAL_PATH)/proprietary/libOMX.TI.WBAMR.encode.so:system/lib/libOMX.TI.WBAMR.encode.so \
-$(LOCAL_PATH)/proprietary/libOMX_Core.so:system/lib/libOMX_Core.so \
-$(LOCAL_PATH)/proprietary/libPERF.so:system/lib/libPERF.so \
-$(LOCAL_PATH)/proprietary/libVendor_ti_omx.so:system/lib/libVendor_ti_omx.so \
-$(LOCAL_PATH)/proprietary/libVendor_ti_omx_config_parser.so:system/lib/libVendor_ti_omx_config_parser.so \
-$(LOCAL_PATH)/proprietary/libopencore_author.so:system/lib/libopencore_author.so
-
+$(LOCAL_PATH)/proprietary/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
