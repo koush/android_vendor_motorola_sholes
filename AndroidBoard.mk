@@ -96,7 +96,9 @@ $(LOCAL_PATH)/proprietary/PhoneConfig.apk:/system/app/PhoneConfig.apk \
 $(LOCAL_PATH)/proprietary/CorpCal.apk:/system/app/CorpCal.apk
 
 PRODUCT_COPY_FILES += \
-$(LOCAL_PATH)/tiwlan_drv.ko:system/lib/modules/tiwlan_drv.ko 
+$(LOCAL_PATH)/kernel_modules/tiwlan_drv.ko:system/lib/modules/tiwlan_drv.ko \
+$(LOCAL_PATH)/kernel_modules/2.6.29-omap1-bekit-0.8.4-stock/ramzswap.ko:system/lib/modules/2.6.29-omap1-bekit-0.8.4-stock/ramzswap.ko \
+$(LOCAL_PATH)/kernel_modules/2.6.29-omap1-bekit-0.8.4-stock/hid-dummy.ko:system/lib/modules/2.6.29-omap1-bekit-0.8.4-stock/hid-dummy.ko
 
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/proprietary/droid.ogg:system/media/audio/notifications/droid.ogg \
