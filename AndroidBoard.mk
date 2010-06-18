@@ -71,11 +71,6 @@ LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
 OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
 include $(BUILD_PREBUILT)
 
-file := $(TARGET_RECOVERY_ROOT_OUT)/etc/fstab
-ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/recovery_fstab | $(ACP)
-	$(transform-prebuilt-to-target)
-	
 file := $(TARGET_OUT)/etc/fstab
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/boot_fstab | $(ACP)
