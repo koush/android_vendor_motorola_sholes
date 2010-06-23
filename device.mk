@@ -1,6 +1,6 @@
 # Build configuration for AOSP on A855 (Droid)
 $(call inherit-product, build/target/product/generic.mk)
-$(call inherit-product, vendor/motorola/sholes-open/device_sholes.mk)
+$(call inherit-product, vendor/motorola/sholes/device_sholes.mk)
 
 PRODUCT_PACKAGES += \
     DeskClock \
@@ -22,7 +22,7 @@ PRODUCT_NAME := sholes
 
 # Which actual hardware this is based on (this is a path under vendor/)
 PRODUCT_BRAND := motorola
-PRODUCT_DEVICE := sholes-open
+PRODUCT_DEVICE := sholes
 
 # The user-visible product name
 PRODUCT_MODEL := A855 (Droid)

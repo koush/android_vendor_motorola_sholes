@@ -46,7 +46,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 # BOARD_KERNEL_BASE := 0x20000000
 USE_CAMERA_STUB := false
-BOARD_EGL_CFG := vendor/motorola/sholes-open/egl.cfg
+BOARD_EGL_CFG := vendor/motorola/sholes/egl.cfg
 
 ENABLE_ANIMATED_GIF := true
 ALLOW_LGPL := true

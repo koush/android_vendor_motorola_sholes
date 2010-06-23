@@ -16,7 +16,7 @@
 
 # This is the list of apps included in the generic AOSP build
 
-DEVICE_PACKAGE_OVERLAYS := vendor/motorola/sholes-open/overlay
+DEVICE_PACKAGE_OVERLAYS := vendor/motorola/sholes/overlay
 
 PRODUCT_PROPERTY_OVERRIDES += \
 		ro.config.notification_sound=droid.ogg \
