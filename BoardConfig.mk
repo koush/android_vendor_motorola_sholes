@@ -51,3 +51,4 @@ BOARD_EGL_CFG := vendor/motorola/sholes/egl.cfg
 ENABLE_ANIMATED_GIF := true
 ALLOW_LGPL := true
 
+USE_SHOLES_PROPERTY := true

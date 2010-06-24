@@ -190,6 +190,5 @@ $(LOCAL_PATH)/proprietary/libOMX.TI.WBAMR.encode.so:system/lib/libOMX.TI.WBAMR.e
 $(LOCAL_PATH)/proprietary/libOMX_Core.so:system/lib/libOMX_Core.so \
 $(LOCAL_PATH)/proprietary/libPERF.so:system/lib/libPERF.so \
 $(LOCAL_PATH)/proprietary/libVendor_ti_omx.so:system/lib/libVendor_ti_omx.so \
-$(LOCAL_PATH)/proprietary/libVendor_ti_omx_config_parser.so:system/lib/libVendor_ti_omx_config_parser.so \
-$(LOCAL_PATH)/proprietary/libopencore_author.so:system/lib/libopencore_author.so
+$(LOCAL_PATH)/proprietary/libVendor_ti_omx_config_parser.so:system/lib/libVendor_ti_omx_config_parser.so
 
